@@ -107,14 +107,6 @@ h1 {
   border-radius: 32px;
 }
 
-.screen__background__shape4 {
-  height: 400px;
-  width: 200px;
-  background: #;
-  top: 420px;
-  right: 50px;
-  border-radius: 60px;
-}
 
 .login {
   width: 320px;
@@ -168,7 +160,7 @@ h1 {
   box-shadow: 0px 2px 2px #5C5696;
   cursor: pointer;
   transition: .2s;
-  position: relative; /* Added */
+  position: relative;
 }
 
 .login__submit:active,
@@ -185,11 +177,9 @@ h1 {
 }
 
 .error-message {
-  position: absolute; /* Added */
-  bottom: -22px; /* Added */
-  left: 0; /* Added */
-  font-size: 12px; /* Added */
-  color: red; /* Added */
+  position: absolute; 
+  bottom: -22px; 
+  left: 0; 
+  font-size: 12px; 
+  color: red; 
 }
-
-
