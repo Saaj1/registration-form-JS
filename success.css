@@ -58,13 +58,22 @@ h1 span {
   h1 {
     font-size: 18px;
   }
+
+  h1 span {
+    padding: 8px 16px;
+  }
 }
 
 @media (max-width: 480px) {
   h1 {
     font-size: 16px;
   }
+
+  h1 span {
+    padding: 6px 12px;
+  }
 }
+
 
 
 /* Specify a slight delay for
