@@ -41,7 +41,7 @@ form.addEventListener('submit', function(event) {
     displayErrorMessage(passwordInput, 'Password is required');
     isValid = false;
   } else if (!validatePassword(password)) {
-    displayErrorMessage(passwordInput, 'Password should contain one number, one uppercase and lowercase character');
+    displayErrorMessage(passwordInput, 'Password should contain one number, one uppercase and one lowercase character');
     isValid = false;
   }
 
@@ -56,10 +56,8 @@ form.addEventListener('submit', function(event) {
   }
 
   if (isValid) {
-    // Form passed validation, you can clear the form or redirect the user to a new page
-    form.reset(); // Clear the form
-    // Redirect the user to a new page: window.location.href = 'newpage.html';
-    alert('Form submitted successfully!');
+    // Form passed validation, redirect the user to a new page
+    window.location.href = 'signup-success.html';
   }
 });
 
@@ -77,7 +75,6 @@ function validatePassword(password) {
   const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[\w.!@#$%^&*]{8,}$/;
   return passwordRegex.test(password);
 }
-
 
 // Function to display error message next to the input field
 function displayErrorMessage(inputField, message) {
